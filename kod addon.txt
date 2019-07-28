@@ -1,0 +1,784 @@
+<div id="confirmer_big2" style="padding-top: 70px; height: 670px; width: 810px; display: block; opacity: 1; margin-top: 20px; margin-left: 50px;">
+		<div style="display: block; position: fixed; z-index: 1400; background-color: rgb(255, 255, 255); border-bottom: 1px dashed rgb(204, 204, 204); padding: 10px; margin-left: -30px; margin-top: -70px; width: 850px;">
+			<a class="basicbutton" title="принять изменения и закрыть окно" onclick="$('#confirmer_big2').css('display','none');$('#blackout').css('display','none');parseCond();" style="float:right;margin-top:0px;">
+				<div id="button_name">ОК</div>
+			</a>
+		</div>
+		<div style="display:none;border-radius:10px;padding:15px;margin:5px;border:1px dashed #3d7d8d;margin-bottom:30px;" id="accounts_show">
+			<h6 style="margin-bottom:0px;margin-top:0px;color:#3d7d8d;font:normal 11px 'Ubuntu Light';">Выбор по аккаунтам</h6>
+							<div style="float: left; margin: 5px; padding: 5px; border-radius: 10px; background-color: rgb(252, 252, 252);">
+									<div>
+			<table border="0" cellpadding="5">
+				<tbody><tr>
+					<td style="border:0px solid #ffffff;">
+						<input type="hidden" name="_account=1" value="0">
+						<div class="switch_2" onclick="active_toggle_noajax(this);" style="margin-left:-5px;">
+							<div class="switch_body" style=""></div><div class="switch_pin2" style="margin-left:2px;margin-top:2px;"></div>
+						</div>
+					</td>
+					<td valign="middle" style="border:0px solid #ffffff;">
+						<div class="switch_off" onclick="active_toggle_noajax(this.parentNode.previousSibling.previousSibling.children[1]);">Администратор Дарвин</div>
+					</td>
+										<td style="border:0px solid #ffffff;">
+						<div class="notice_flag" title="Включить в выбор сотрудников данного аккаунта" onmouseover="transp(this,'10');" onmouseout="transp(this,'5');" style="margin-left:-7px;"></div>
+					</td>
+									</tr>
+			</tbody></table>
+		</div>
+				</div>
+							<div style="float: left; margin: 5px; padding: 5px; border-radius: 10px; background-color: rgb(252, 252, 252);">
+									<div>
+			<table border="0" cellpadding="5">
+				<tbody><tr>
+					<td style="border:0px solid #ffffff;">
+						<input type="hidden" name="_account=13" value="0">
+						<div class="switch_2" onclick="active_toggle_noajax(this);" style="margin-left:-5px;">
+							<div class="switch_body" style=""></div><div class="switch_pin2" style="margin-left:2px;margin-top:2px;"></div>
+						</div>
+					</td>
+					<td valign="middle" style="border:0px solid #ffffff;">
+						<div class="switch_off" onclick="active_toggle_noajax(this.parentNode.previousSibling.previousSibling.children[1]);">Настройщик 1</div>
+					</td>
+										<td style="border:0px solid #ffffff;">
+						<div class="notice_flag" title="Включить в выбор сотрудников данного аккаунта" onmouseover="transp(this,'10');" onmouseout="transp(this,'5');" style="margin-left:-7px;"></div>
+					</td>
+									</tr>
+			</tbody></table>
+		</div>
+				</div>
+							<div style="float: left; margin: 5px; padding: 5px; border-radius: 10px; background-color: rgb(252, 252, 252);">
+									<div>
+			<table border="0" cellpadding="5">
+				<tbody><tr>
+					<td style="border:0px solid #ffffff;">
+						<input type="hidden" name="_account=14" value="0">
+						<div class="switch_2" onclick="active_toggle_noajax(this);" style="margin-left:-5px;">
+							<div class="switch_body" style=""></div><div class="switch_pin2" style="margin-left:2px;margin-top:2px;"></div>
+						</div>
+					</td>
+					<td valign="middle" style="border:0px solid #ffffff;">
+						<div class="switch_off" onclick="active_toggle_noajax(this.parentNode.previousSibling.previousSibling.children[1]);">Директор (Тест_Шмелев ДН)</div>
+					</td>
+										<td style="border:0px solid #ffffff;">
+						<div class="notice_flag" title="Включить в выбор сотрудников данного аккаунта" onmouseover="transp(this,'10');" onmouseout="transp(this,'5');" style="margin-left:-7px;"></div>
+					</td>
+									</tr>
+			</tbody></table>
+		</div>
+				</div>
+							<div style="float: left; margin: 5px; padding: 5px; border-radius: 10px; background-color: rgb(252, 252, 252);">
+									<div>
+			<table border="0" cellpadding="5">
+				<tbody><tr>
+					<td style="border:0px solid #ffffff;">
+						<input type="hidden" name="_account=41" value="0">
+						<div class="switch_2" onclick="active_toggle_noajax(this);" style="margin-left:-5px;">
+							<div class="switch_body" style=""></div><div class="switch_pin2" style="margin-left:2px;margin-top:2px;"></div>
+						</div>
+					</td>
+					<td valign="middle" style="border:0px solid #ffffff;">
+						<div class="switch_off" onclick="active_toggle_noajax(this.parentNode.previousSibling.previousSibling.children[1]);">Настройщик 2</div>
+					</td>
+										<td style="border:0px solid #ffffff;">
+						<div class="notice_flag" title="Включить в выбор сотрудников данного аккаунта" onmouseover="transp(this,'10');" onmouseout="transp(this,'5');" style="margin-left:-7px;"></div>
+					</td>
+									</tr>
+			</tbody></table>
+		</div>
+				</div>
+							<div style="float: left; margin: 5px; padding: 5px; border-radius: 10px; background-color: rgb(252, 252, 252);">
+									<div>
+			<table border="0" cellpadding="5">
+				<tbody><tr>
+					<td style="border:0px solid #ffffff;">
+						<input type="hidden" name="_account=42" value="0">
+						<div class="switch_2" onclick="active_toggle_noajax(this);" style="margin-left:-5px;">
+							<div class="switch_body" style=""></div><div class="switch_pin2" style="margin-left:2px;margin-top:2px;"></div>
+						</div>
+					</td>
+					<td valign="middle" style="border:0px solid #ffffff;">
+						<div class="switch_off" onclick="active_toggle_noajax(this.parentNode.previousSibling.previousSibling.children[1]);">Логист</div>
+					</td>
+										<td style="border:0px solid #ffffff;">
+						<div class="notice_flag" title="Включить в выбор сотрудников данного аккаунта" onmouseover="transp(this,'10');" onmouseout="transp(this,'5');" style="margin-left:-7px;"></div>
+					</td>
+									</tr>
+			</tbody></table>
+		</div>
+				</div>
+							<div style="float: left; margin: 5px; padding: 5px; border-radius: 10px; background-color: rgb(252, 252, 252);">
+									<div>
+			<table border="0" cellpadding="5">
+				<tbody><tr>
+					<td style="border:0px solid #ffffff;">
+						<input type="hidden" name="_account=43" value="0">
+						<div class="switch_2" onclick="active_toggle_noajax(this);" style="margin-left:-5px;">
+							<div class="switch_body" style=""></div><div class="switch_pin2" style="margin-left:2px;margin-top:2px;"></div>
+						</div>
+					</td>
+					<td valign="middle" style="border:0px solid #ffffff;">
+						<div class="switch_off" onclick="active_toggle_noajax(this.parentNode.previousSibling.previousSibling.children[1]);">Курьер</div>
+					</td>
+										<td style="border:0px solid #ffffff;">
+						<div class="notice_flag" title="Включить в выбор сотрудников данного аккаунта" onmouseover="transp(this,'10');" onmouseout="transp(this,'5');" style="margin-left:-7px;"></div>
+					</td>
+									</tr>
+			</tbody></table>
+		</div>
+				</div>
+							<div style="float: left; margin: 5px; padding: 5px; border-radius: 10px; background-color: rgb(252, 252, 252);">
+									<div>
+			<table border="0" cellpadding="5">
+				<tbody><tr>
+					<td style="border:0px solid #ffffff;">
+						<input type="hidden" name="_account=77" value="0">
+						<div class="switch_2" onclick="active_toggle_noajax(this);" style="margin-left:-5px;">
+							<div class="switch_body" style=""></div><div class="switch_pin2" style="margin-left:2px;margin-top:2px;"></div>
+						</div>
+					</td>
+					<td valign="middle" style="border:0px solid #ffffff;">
+						<div class="switch_off" onclick="active_toggle_noajax(this.parentNode.previousSibling.previousSibling.children[1]);">Начальник производства</div>
+					</td>
+										<td style="border:0px solid #ffffff;">
+						<div class="notice_flag" title="Включить в выбор сотрудников данного аккаунта" onmouseover="transp(this,'10');" onmouseout="transp(this,'5');" style="margin-left:-7px;"></div>
+					</td>
+									</tr>
+			</tbody></table>
+		</div>
+				</div>
+							<div style="float: left; margin: 5px; padding: 5px; border-radius: 10px; background-color: rgb(252, 252, 252);">
+									<div>
+			<table border="0" cellpadding="5">
+				<tbody><tr>
+					<td style="border:0px solid #ffffff;">
+						<input type="hidden" name="_account=36" value="0">
+						<div class="switch_2" onclick="active_toggle_noajax(this);" style="margin-left:-5px;">
+							<div class="switch_body" style=""></div><div class="switch_pin2" style="margin-left:2px;margin-top:2px;"></div>
+						</div>
+					</td>
+					<td valign="middle" style="border:0px solid #ffffff;">
+						<div class="switch_off" onclick="active_toggle_noajax(this.parentNode.previousSibling.previousSibling.children[1]);">Оценщик (Тест_Шмелев ДН)</div>
+					</td>
+										<td style="border:0px solid #ffffff;">
+						<div class="notice_flag" title="Включить в выбор сотрудников данного аккаунта" onmouseover="transp(this,'10');" onmouseout="transp(this,'5');" style="margin-left:-7px;"></div>
+					</td>
+									</tr>
+			</tbody></table>
+		</div>
+				</div>
+							<div style="float: left; margin: 5px; padding: 5px; border-radius: 10px; background-color: rgb(252, 252, 252);">
+									<div>
+			<table border="0" cellpadding="5">
+				<tbody><tr>
+					<td style="border:0px solid #ffffff;">
+						<input type="hidden" name="_account=37" value="0">
+						<div class="switch_2" onclick="active_toggle_noajax(this);" style="margin-left:-5px;">
+							<div class="switch_body" style=""></div><div class="switch_pin2" style="margin-left:2px;margin-top:2px;"></div>
+						</div>
+					</td>
+					<td valign="middle" style="border:0px solid #ffffff;">
+						<div class="switch_off" onclick="active_toggle_noajax(this.parentNode.previousSibling.previousSibling.children[1]);">Продавец (Тест_Шмелев ДН)</div>
+					</td>
+										<td style="border:0px solid #ffffff;">
+						<div class="notice_flag" title="Включить в выбор сотрудников данного аккаунта" onmouseover="transp(this,'10');" onmouseout="transp(this,'5');" style="margin-left:-7px;"></div>
+					</td>
+									</tr>
+			</tbody></table>
+		</div>
+				</div>
+							<div style="float: left; margin: 5px; padding: 5px; border-radius: 10px; background-color: rgb(252, 252, 252);">
+									<div>
+			<table border="0" cellpadding="5">
+				<tbody><tr>
+					<td style="border:0px solid #ffffff;">
+						<input type="hidden" name="_account=38" value="0">
+						<div class="switch_2" onclick="active_toggle_noajax(this);" style="margin-left:-5px;">
+							<div class="switch_body" style=""></div><div class="switch_pin2" style="margin-left:2px;margin-top:2px;"></div>
+						</div>
+					</td>
+					<td valign="middle" style="border:0px solid #ffffff;">
+						<div class="switch_off" onclick="active_toggle_noajax(this.parentNode.previousSibling.previousSibling.children[1]);">Бухгалтер (Тест_Шмелев ДН)</div>
+					</td>
+										<td style="border:0px solid #ffffff;">
+						<div class="notice_flag" title="Включить в выбор сотрудников данного аккаунта" onmouseover="transp(this,'10');" onmouseout="transp(this,'5');" style="margin-left:-7px;"></div>
+					</td>
+									</tr>
+			</tbody></table>
+		</div>
+				</div>
+							<div style="float: left; margin: 5px; padding: 5px; border-radius: 10px; background-color: rgb(252, 252, 252);">
+									<div>
+			<table border="0" cellpadding="5">
+				<tbody><tr>
+					<td style="border:0px solid #ffffff;">
+						<input type="hidden" name="_account=40" value="0">
+						<div class="switch_2" onclick="active_toggle_noajax(this);" style="margin-left:-5px;">
+							<div class="switch_body" style=""></div><div class="switch_pin2" style="margin-left:2px;margin-top:2px;"></div>
+						</div>
+					</td>
+					<td valign="middle" style="border:0px solid #ffffff;">
+						<div class="switch_off" onclick="active_toggle_noajax(this.parentNode.previousSibling.previousSibling.children[1]);">Менеджер (Тест_Шмелев ДН)</div>
+					</td>
+										<td style="border:0px solid #ffffff;">
+						<div class="notice_flag" title="Включить в выбор сотрудников данного аккаунта" onmouseover="transp(this,'10');" onmouseout="transp(this,'5');" style="margin-left:-7px;"></div>
+					</td>
+									</tr>
+			</tbody></table>
+		</div>
+				</div>
+							<div style="float: left; margin: 5px; padding: 5px; border-radius: 10px; background-color: rgb(252, 252, 252);">
+									<div>
+			<table border="0" cellpadding="5">
+				<tbody><tr>
+					<td style="border:0px solid #ffffff;">
+						<input type="hidden" name="_account=74" value="0">
+						<div class="switch_2" onclick="active_toggle_noajax(this);" style="margin-left:-5px;">
+							<div class="switch_body" style=""></div><div class="switch_pin2" style="margin-left:2px;margin-top:2px;"></div>
+						</div>
+					</td>
+					<td valign="middle" style="border:0px solid #ffffff;">
+						<div class="switch_off" onclick="active_toggle_noajax(this.parentNode.previousSibling.previousSibling.children[1]);">Логист</div>
+					</td>
+										<td style="border:0px solid #ffffff;">
+						<div class="notice_flag" title="Включить в выбор сотрудников данного аккаунта" onmouseover="transp(this,'10');" onmouseout="transp(this,'5');" style="margin-left:-7px;"></div>
+					</td>
+									</tr>
+			</tbody></table>
+		</div>
+				</div>
+							<div style="float: left; margin: 5px; padding: 5px; border-radius: 10px; background-color: rgb(252, 252, 252);">
+									<div>
+			<table border="0" cellpadding="5">
+				<tbody><tr>
+					<td style="border:0px solid #ffffff;">
+						<input type="hidden" name="_account=73" value="0">
+						<div class="switch_2" onclick="active_toggle_noajax(this);" style="margin-left:-5px;">
+							<div class="switch_body" style=""></div><div class="switch_pin2" style="margin-left:2px;margin-top:2px;"></div>
+						</div>
+					</td>
+					<td valign="middle" style="border:0px solid #ffffff;">
+						<div class="switch_off" onclick="active_toggle_noajax(this.parentNode.previousSibling.previousSibling.children[1]);">Заместитель генерального директора</div>
+					</td>
+										<td style="border:0px solid #ffffff;">
+						<div class="notice_flag" title="Включить в выбор сотрудников данного аккаунта" onmouseover="transp(this,'10');" onmouseout="transp(this,'5');" style="margin-left:-7px;"></div>
+					</td>
+									</tr>
+			</tbody></table>
+		</div>
+				</div>
+							<div style="float: left; margin: 5px; padding: 5px; border-radius: 10px; background-color: rgb(252, 252, 252);">
+									<div>
+			<table border="0" cellpadding="5">
+				<tbody><tr>
+					<td style="border:0px solid #ffffff;">
+						<input type="hidden" name="_account=79" value="0">
+						<div class="switch_2" onclick="active_toggle_noajax(this);" style="margin-left:-5px;">
+							<div class="switch_body" style=""></div><div class="switch_pin2" style="margin-left:2px;margin-top:2px;"></div>
+						</div>
+					</td>
+					<td valign="middle" style="border:0px solid #ffffff;">
+						<div class="switch_off" onclick="active_toggle_noajax(this.parentNode.previousSibling.previousSibling.children[1]);">Руководитель отдала монтажа</div>
+					</td>
+										<td style="border:0px solid #ffffff;">
+						<div class="notice_flag" title="Включить в выбор сотрудников данного аккаунта" onmouseover="transp(this,'10');" onmouseout="transp(this,'5');" style="margin-left:-7px;"></div>
+					</td>
+									</tr>
+			</tbody></table>
+		</div>
+				</div>
+							<div style="float: left; margin: 5px; padding: 5px; border-radius: 10px; background-color: rgb(252, 252, 252);">
+									<div>
+			<table border="0" cellpadding="5">
+				<tbody><tr>
+					<td style="border:0px solid #ffffff;">
+						<input type="hidden" name="_account=61" value="0">
+						<div class="switch_2" onclick="active_toggle_noajax(this);" style="margin-left:-5px;">
+							<div class="switch_body" style=""></div><div class="switch_pin2" style="margin-left:2px;margin-top:2px;"></div>
+						</div>
+					</td>
+					<td valign="middle" style="border:0px solid #ffffff;">
+						<div class="switch_off" onclick="active_toggle_noajax(this.parentNode.previousSibling.previousSibling.children[1]);">Генеральный директор -1</div>
+					</td>
+										<td style="border:0px solid #ffffff;">
+						<div class="notice_flag" title="Включить в выбор сотрудников данного аккаунта" onmouseover="transp(this,'10');" onmouseout="transp(this,'5');" style="margin-left:-7px;"></div>
+					</td>
+									</tr>
+			</tbody></table>
+		</div>
+				</div>
+							<div style="float: left; margin: 5px; padding: 5px; border-radius: 10px; background-color: rgb(252, 252, 252);">
+									<div>
+			<table border="0" cellpadding="5">
+				<tbody><tr>
+					<td style="border:0px solid #ffffff;">
+						<input type="hidden" name="_account=81" value="0">
+						<div class="switch_2" onclick="active_toggle_noajax(this);" style="margin-left:-5px;">
+							<div class="switch_body" style=""></div><div class="switch_pin2" style="margin-left:2px;margin-top:2px;"></div>
+						</div>
+					</td>
+					<td valign="middle" style="border:0px solid #ffffff;">
+						<div class="switch_off" onclick="active_toggle_noajax(this.parentNode.previousSibling.previousSibling.children[1]);">Руководитель отдела продаж</div>
+					</td>
+										<td style="border:0px solid #ffffff;">
+						<div class="notice_flag" title="Включить в выбор сотрудников данного аккаунта" onmouseover="transp(this,'10');" onmouseout="transp(this,'5');" style="margin-left:-7px;"></div>
+					</td>
+									</tr>
+			</tbody></table>
+		</div>
+				</div>
+							<div style="float: left; margin: 5px; padding: 5px; border-radius: 10px; background-color: rgb(252, 252, 252);">
+									<div>
+			<table border="0" cellpadding="5">
+				<tbody><tr>
+					<td style="border:0px solid #ffffff;">
+						<input type="hidden" name="_account=75" value="0">
+						<div class="switch_2" onclick="active_toggle_noajax(this);" style="margin-left:-5px;">
+							<div class="switch_body" style=""></div><div class="switch_pin2" style="margin-left:2px;margin-top:2px;"></div>
+						</div>
+					</td>
+					<td valign="middle" style="border:0px solid #ffffff;">
+						<div class="switch_off" onclick="active_toggle_noajax(this.parentNode.previousSibling.previousSibling.children[1]);">Водитель</div>
+					</td>
+										<td style="border:0px solid #ffffff;">
+						<div class="notice_flag" title="Включить в выбор сотрудников данного аккаунта" onmouseover="transp(this,'10');" onmouseout="transp(this,'5');" style="margin-left:-7px;"></div>
+					</td>
+									</tr>
+			</tbody></table>
+		</div>
+				</div>
+							<div style="float: left; margin: 5px; padding: 5px; border-radius: 10px; background-color: rgb(252, 252, 252);">
+									<div>
+			<table border="0" cellpadding="5">
+				<tbody><tr>
+					<td style="border:0px solid #ffffff;">
+						<input type="hidden" name="_account=68" value="0">
+						<div class="switch_2" onclick="active_toggle_noajax(this);" style="margin-left:-5px;">
+							<div class="switch_body" style=""></div><div class="switch_pin2" style="margin-left:2px;margin-top:2px;"></div>
+						</div>
+					</td>
+					<td valign="middle" style="border:0px solid #ffffff;">
+						<div class="switch_off" onclick="active_toggle_noajax(this.parentNode.previousSibling.previousSibling.children[1]);">Руководитель отдела монтажа -1</div>
+					</td>
+										<td style="border:0px solid #ffffff;">
+						<div class="notice_flag" title="Включить в выбор сотрудников данного аккаунта" onmouseover="transp(this,'10');" onmouseout="transp(this,'5');" style="margin-left:-7px;"></div>
+					</td>
+									</tr>
+			</tbody></table>
+		</div>
+				</div>
+							<div style="float: left; margin: 5px; padding: 5px; border-radius: 10px; background-color: rgb(252, 252, 252);">
+									<div>
+			<table border="0" cellpadding="5">
+				<tbody><tr>
+					<td style="border:0px solid #ffffff;">
+						<input type="hidden" name="_account=66" value="0">
+						<div class="switch_2" onclick="active_toggle_noajax(this);" style="margin-left:-5px;">
+							<div class="switch_body" style=""></div><div class="switch_pin2" style="margin-left:2px;margin-top:2px;"></div>
+						</div>
+					</td>
+					<td valign="middle" style="border:0px solid #ffffff;">
+						<div class="switch_off" onclick="active_toggle_noajax(this.parentNode.previousSibling.previousSibling.children[1]);">Начальник производства -1</div>
+					</td>
+										<td style="border:0px solid #ffffff;">
+						<div class="notice_flag" title="Включить в выбор сотрудников данного аккаунта" onmouseover="transp(this,'10');" onmouseout="transp(this,'5');" style="margin-left:-7px;"></div>
+					</td>
+									</tr>
+			</tbody></table>
+		</div>
+				</div>
+							<div style="float: left; margin: 5px; padding: 5px; border-radius: 10px; background-color: rgb(252, 252, 252);">
+									<div>
+			<table border="0" cellpadding="5">
+				<tbody><tr>
+					<td style="border:0px solid #ffffff;">
+						<input type="hidden" name="_account=70" value="0">
+						<div class="switch_2" onclick="active_toggle_noajax(this);" style="margin-left:-5px;">
+							<div class="switch_body" style=""></div><div class="switch_pin2" style="margin-left:2px;margin-top:2px;"></div>
+						</div>
+					</td>
+					<td valign="middle" style="border:0px solid #ffffff;">
+						<div class="switch_off" onclick="active_toggle_noajax(this.parentNode.previousSibling.previousSibling.children[1]);">Руководитель отдела продаж -1</div>
+					</td>
+										<td style="border:0px solid #ffffff;">
+						<div class="notice_flag" title="Включить в выбор сотрудников данного аккаунта" onmouseover="transp(this,'10');" onmouseout="transp(this,'5');" style="margin-left:-7px;"></div>
+					</td>
+									</tr>
+			</tbody></table>
+		</div>
+				</div>
+							<div style="float: left; margin: 5px; padding: 5px; border-radius: 10px; background-color: rgb(252, 252, 252);">
+									<div>
+			<table border="0" cellpadding="5">
+				<tbody><tr>
+					<td style="border:0px solid #ffffff;">
+						<input type="hidden" name="_account=78" value="0">
+						<div class="switch_2" onclick="active_toggle_noajax(this);" style="margin-left:-5px;">
+							<div class="switch_body" style=""></div><div class="switch_pin2" style="margin-left:2px;margin-top:2px;"></div>
+						</div>
+					</td>
+					<td valign="middle" style="border:0px solid #ffffff;">
+						<div class="switch_off" onclick="active_toggle_noajax(this.parentNode.previousSibling.previousSibling.children[1]);">Кладовщик</div>
+					</td>
+										<td style="border:0px solid #ffffff;">
+						<div class="notice_flag" title="Включить в выбор сотрудников данного аккаунта" onmouseover="transp(this,'10');" onmouseout="transp(this,'5');" style="margin-left:-7px;"></div>
+					</td>
+									</tr>
+			</tbody></table>
+		</div>
+				</div>
+							<div style="float: left; margin: 5px; padding: 5px; border-radius: 10px; background-color: rgb(252, 252, 252);">
+									<div>
+			<table border="0" cellpadding="5">
+				<tbody><tr>
+					<td style="border:0px solid #ffffff;">
+						<input type="hidden" name="_account=62" value="0">
+						<div class="switch_2" onclick="active_toggle_noajax(this);" style="margin-left:-5px;">
+							<div class="switch_body" style=""></div><div class="switch_pin2" style="margin-left:2px;margin-top:2px;"></div>
+						</div>
+					</td>
+					<td valign="middle" style="border:0px solid #ffffff;">
+						<div class="switch_off" onclick="active_toggle_noajax(this.parentNode.previousSibling.previousSibling.children[1]);">Заместитель генерального директора -1</div>
+					</td>
+										<td style="border:0px solid #ffffff;">
+						<div class="notice_flag" title="Включить в выбор сотрудников данного аккаунта" onmouseover="transp(this,'10');" onmouseout="transp(this,'5');" style="margin-left:-7px;"></div>
+					</td>
+									</tr>
+			</tbody></table>
+		</div>
+				</div>
+							<div style="float: left; margin: 5px; padding: 5px; border-radius: 10px; background-color: rgb(252, 252, 252);">
+									<div>
+			<table border="0" cellpadding="5">
+				<tbody><tr>
+					<td style="border:0px solid #ffffff;">
+						<input type="hidden" name="_account=63" value="0">
+						<div class="switch_2" onclick="active_toggle_noajax(this);" style="margin-left:-5px;">
+							<div class="switch_body" style=""></div><div class="switch_pin2" style="margin-left:2px;margin-top:2px;"></div>
+						</div>
+					</td>
+					<td valign="middle" style="border:0px solid #ffffff;">
+						<div class="switch_off" onclick="active_toggle_noajax(this.parentNode.previousSibling.previousSibling.children[1]);">Логист -1</div>
+					</td>
+										<td style="border:0px solid #ffffff;">
+						<div class="notice_flag" title="Включить в выбор сотрудников данного аккаунта" onmouseover="transp(this,'10');" onmouseout="transp(this,'5');" style="margin-left:-7px;"></div>
+					</td>
+									</tr>
+			</tbody></table>
+		</div>
+				</div>
+							<div style="float: left; margin: 5px; padding: 5px; border-radius: 10px; background-color: rgb(252, 252, 252);">
+									<div>
+			<table border="0" cellpadding="5">
+				<tbody><tr>
+					<td style="border:0px solid #ffffff;">
+						<input type="hidden" name="_account=80" value="0">
+						<div class="switch_2" onclick="active_toggle_noajax(this);" style="margin-left:-5px;">
+							<div class="switch_body" style=""></div><div class="switch_pin2" style="margin-left:2px;margin-top:2px;"></div>
+						</div>
+					</td>
+					<td valign="middle" style="border:0px solid #ffffff;">
+						<div class="switch_off" onclick="active_toggle_noajax(this.parentNode.previousSibling.previousSibling.children[1]);">Монтажная бригада</div>
+					</td>
+										<td style="border:0px solid #ffffff;">
+						<div class="notice_flag" title="Включить в выбор сотрудников данного аккаунта" onmouseover="transp(this,'10');" onmouseout="transp(this,'5');" style="margin-left:-7px;"></div>
+					</td>
+									</tr>
+			</tbody></table>
+		</div>
+				</div>
+							<div style="float: left; margin: 5px; padding: 5px; border-radius: 10px; background-color: rgb(252, 252, 252);">
+									<div>
+			<table border="0" cellpadding="5">
+				<tbody><tr>
+					<td style="border:0px solid #ffffff;">
+						<input type="hidden" name="_account=82" value="0">
+						<div class="switch_2" onclick="active_toggle_noajax(this);" style="margin-left:-5px;">
+							<div class="switch_body" style=""></div><div class="switch_pin2" style="margin-left:2px;margin-top:2px;"></div>
+						</div>
+					</td>
+					<td valign="middle" style="border:0px solid #ffffff;">
+						<div class="switch_off" onclick="active_toggle_noajax(this.parentNode.previousSibling.previousSibling.children[1]);">Замерщик</div>
+					</td>
+										<td style="border:0px solid #ffffff;">
+						<div class="notice_flag" title="Включить в выбор сотрудников данного аккаунта" onmouseover="transp(this,'10');" onmouseout="transp(this,'5');" style="margin-left:-7px;"></div>
+					</td>
+									</tr>
+			</tbody></table>
+		</div>
+				</div>
+							<div style="float: left; margin: 5px; padding: 5px; border-radius: 10px; background-color: rgb(252, 252, 252);">
+									<div>
+			<table border="0" cellpadding="5">
+				<tbody><tr>
+					<td style="border:0px solid #ffffff;">
+						<input type="hidden" name="_account=76" value="0">
+						<div class="switch_2" onclick="active_toggle_noajax(this);" style="margin-left:-5px;">
+							<div class="switch_body" style=""></div><div class="switch_pin2" style="margin-left:2px;margin-top:2px;"></div>
+						</div>
+					</td>
+					<td valign="middle" style="border:0px solid #ffffff;">
+						<div class="switch_off" onclick="active_toggle_noajax(this.parentNode.previousSibling.previousSibling.children[1]);">Курьер</div>
+					</td>
+										<td style="border:0px solid #ffffff;">
+						<div class="notice_flag" title="Включить в выбор сотрудников данного аккаунта" onmouseover="transp(this,'10');" onmouseout="transp(this,'5');" style="margin-left:-7px;"></div>
+					</td>
+									</tr>
+			</tbody></table>
+		</div>
+				</div>
+							<div style="float: left; margin: 5px; padding: 5px; border-radius: 10px; background-color: rgb(252, 252, 252);">
+									<div>
+			<table border="0" cellpadding="5">
+				<tbody><tr>
+					<td style="border:0px solid #ffffff;">
+						<input type="hidden" name="_account=72" value="0">
+						<div class="switch_2" onclick="active_toggle_noajax(this);" style="margin-left:-5px;">
+							<div class="switch_body" style=""></div><div class="switch_pin2" style="margin-left:2px;margin-top:2px;"></div>
+						</div>
+					</td>
+					<td valign="middle" style="border:0px solid #ffffff;">
+						<div class="switch_off" onclick="active_toggle_noajax(this.parentNode.previousSibling.previousSibling.children[1]);">Менеджер -1</div>
+					</td>
+										<td style="border:0px solid #ffffff;">
+						<div class="notice_flag" title="Включить в выбор сотрудников данного аккаунта" onmouseover="transp(this,'10');" onmouseout="transp(this,'5');" style="margin-left:-7px;"></div>
+					</td>
+									</tr>
+			</tbody></table>
+		</div>
+				</div>
+							<div style="float: left; margin: 5px; padding: 5px; border-radius: 10px; background-color: rgb(252, 252, 252);">
+									<div>
+			<table border="0" cellpadding="5">
+				<tbody><tr>
+					<td style="border:0px solid #ffffff;">
+						<input type="hidden" name="_account=67" value="0">
+						<div class="switch_2" onclick="active_toggle_noajax(this);" style="margin-left:-5px;">
+							<div class="switch_body" style=""></div><div class="switch_pin2" style="margin-left:2px;margin-top:2px;"></div>
+						</div>
+					</td>
+					<td valign="middle" style="border:0px solid #ffffff;">
+						<div class="switch_off" onclick="active_toggle_noajax(this.parentNode.previousSibling.previousSibling.children[1]);">Кладовщик -1</div>
+					</td>
+										<td style="border:0px solid #ffffff;">
+						<div class="notice_flag" title="Включить в выбор сотрудников данного аккаунта" onmouseover="transp(this,'10');" onmouseout="transp(this,'5');" style="margin-left:-7px;"></div>
+					</td>
+									</tr>
+			</tbody></table>
+		</div>
+				</div>
+							<div style="float: left; margin: 5px; padding: 5px; border-radius: 10px; background-color: rgb(252, 252, 252);">
+									<div>
+			<table border="0" cellpadding="5">
+				<tbody><tr>
+					<td style="border:0px solid #ffffff;">
+						<input type="hidden" name="_account=69" value="0">
+						<div class="switch_2" onclick="active_toggle_noajax(this);" style="margin-left:-5px;">
+							<div class="switch_body" style=""></div><div class="switch_pin2" style="margin-left:2px;margin-top:2px;"></div>
+						</div>
+					</td>
+					<td valign="middle" style="border:0px solid #ffffff;">
+						<div class="switch_off" onclick="active_toggle_noajax(this.parentNode.previousSibling.previousSibling.children[1]);">Монтажная бригада -1</div>
+					</td>
+										<td style="border:0px solid #ffffff;">
+						<div class="notice_flag" title="Включить в выбор сотрудников данного аккаунта" onmouseover="transp(this,'10');" onmouseout="transp(this,'5');" style="margin-left:-7px;"></div>
+					</td>
+									</tr>
+			</tbody></table>
+		</div>
+				</div>
+							<div style="float: left; margin: 5px; padding: 5px; border-radius: 10px; background-color: rgb(252, 252, 252);">
+									<div>
+			<table border="0" cellpadding="5">
+				<tbody><tr>
+					<td style="border:0px solid #ffffff;">
+						<input type="hidden" name="_account=71" value="0">
+						<div class="switch_2" onclick="active_toggle_noajax(this);" style="margin-left:-5px;">
+							<div class="switch_body" style=""></div><div class="switch_pin2" style="margin-left:2px;margin-top:2px;"></div>
+						</div>
+					</td>
+					<td valign="middle" style="border:0px solid #ffffff;">
+						<div class="switch_off" onclick="active_toggle_noajax(this.parentNode.previousSibling.previousSibling.children[1]);">Замерщик -1</div>
+					</td>
+										<td style="border:0px solid #ffffff;">
+						<div class="notice_flag" title="Включить в выбор сотрудников данного аккаунта" onmouseover="transp(this,'10');" onmouseout="transp(this,'5');" style="margin-left:-7px;"></div>
+					</td>
+									</tr>
+			</tbody></table>
+		</div>
+				</div>
+							<div style="float: left; margin: 5px; padding: 5px; border-radius: 10px; background-color: rgb(252, 252, 252);">
+									<div>
+			<table border="0" cellpadding="5">
+				<tbody><tr>
+					<td style="border:0px solid #ffffff;">
+						<input type="hidden" name="_account=64" value="0">
+						<div class="switch_2" onclick="active_toggle_noajax(this);" style="margin-left:-5px;">
+							<div class="switch_body" style=""></div><div class="switch_pin2" style="margin-left:2px;margin-top:2px;"></div>
+						</div>
+					</td>
+					<td valign="middle" style="border:0px solid #ffffff;">
+						<div class="switch_off" onclick="active_toggle_noajax(this.parentNode.previousSibling.previousSibling.children[1]);">Водитель -1</div>
+					</td>
+										<td style="border:0px solid #ffffff;">
+						<div class="notice_flag" title="Включить в выбор сотрудников данного аккаунта" onmouseover="transp(this,'10');" onmouseout="transp(this,'5');" style="margin-left:-7px;"></div>
+					</td>
+									</tr>
+			</tbody></table>
+		</div>
+				</div>
+							<div style="float: left; margin: 5px; padding: 5px; border-radius: 10px; background-color: rgb(252, 252, 252);">
+									<div>
+			<table border="0" cellpadding="5">
+				<tbody><tr>
+					<td style="border:0px solid #ffffff;">
+						<input type="hidden" name="_account=65" value="0">
+						<div class="switch_2" onclick="active_toggle_noajax(this);" style="margin-left:-5px;">
+							<div class="switch_body" style=""></div><div class="switch_pin2" style="margin-left:2px;margin-top:2px;"></div>
+						</div>
+					</td>
+					<td valign="middle" style="border:0px solid #ffffff;">
+						<div class="switch_off" onclick="active_toggle_noajax(this.parentNode.previousSibling.previousSibling.children[1]);">Курьер -1</div>
+					</td>
+										<td style="border:0px solid #ffffff;">
+						<div class="notice_flag" title="Включить в выбор сотрудников данного аккаунта" onmouseover="transp(this,'10');" onmouseout="transp(this,'5');" style="margin-left:-7px;"></div>
+					</td>
+									</tr>
+			</tbody></table>
+		</div>
+				</div>
+							<div style="float: left; margin: 5px; padding: 5px; border-radius: 10px; background-color: rgb(252, 252, 252);">
+									<div>
+			<table border="0" cellpadding="5">
+				<tbody><tr>
+					<td style="border:0px solid #ffffff;">
+						<input type="hidden" name="_account=83" value="0">
+						<div class="switch_2" onclick="active_toggle_noajax(this);" style="margin-left:-5px;">
+							<div class="switch_body" style=""></div><div class="switch_pin2" style="margin-left:2px;margin-top:2px;"></div>
+						</div>
+					</td>
+					<td valign="middle" style="border:0px solid #ffffff;">
+						<div class="switch_off" onclick="active_toggle_noajax(this.parentNode.previousSibling.previousSibling.children[1]);">Менеджер</div>
+					</td>
+										<td style="border:0px solid #ffffff;">
+						<div class="notice_flag" title="Включить в выбор сотрудников данного аккаунта" onmouseover="transp(this,'10');" onmouseout="transp(this,'5');" style="margin-left:-7px;"></div>
+					</td>
+									</tr>
+			</tbody></table>
+		</div>
+				</div>
+							<div style="float: left; margin: 5px; padding: 5px; border-radius: 10px; background-color: rgb(252, 252, 252);">
+									<div>
+			<table border="0" cellpadding="5">
+				<tbody><tr>
+					<td style="border:0px solid #ffffff;">
+						<input type="hidden" name="_account=85" value="0">
+						<div class="switch_2" onclick="active_toggle_noajax(this);" style="margin-left:-5px;">
+							<div class="switch_body" style=""></div><div class="switch_pin2" style="margin-left:2px;margin-top:2px;"></div>
+						</div>
+					</td>
+					<td valign="middle" style="border:0px solid #ffffff;">
+						<div class="switch_off" onclick="active_toggle_noajax(this.parentNode.previousSibling.previousSibling.children[1]);">Оператор -1</div>
+					</td>
+										<td style="border:0px solid #ffffff;">
+						<div class="notice_flag" title="Включить в выбор сотрудников данного аккаунта" onmouseover="transp(this,'10');" onmouseout="transp(this,'5');" style="margin-left:-7px;"></div>
+					</td>
+									</tr>
+			</tbody></table>
+		</div>
+				</div>
+					</div><br>
+		<div id="fields_formula" style="display:inline-block;border-radius:10px;padding:15px;margin:5px;border:1px dashed #3d7d8d;margin-bottom:30px;float:none;min-height:81px;"></div><br>		
+		<div style="display:none;border-radius:10px;padding:15px;margin:5px;border:1px dashed #3d7d8d;margin-bottom:30px;" id="oper_math_formula">
+			<h6 style="margin-bottom:0px;margin-top:0px;color:#3d7d8d;font:normal 11px 'Ubuntu Light';">Операторы и текстовые поля</h6>
+			<div class="redbutton" onclick="addOper('text');" title="Свободное текстовое поле" style="margin-top:10px;margin-right:5px;">
+				<div class="field_type_image" style="background-image:url(/darwinpro/src/vis/svg/freefield.svg);margin:7px 9px 6px 9px;"></div>
+			</div>
+			<div class="redbutton" onclick="addOper('+');" title="Плюс" style="margin-top:10px;margin-right:5px;">
+				<div id="button_name" style="margin:5px 15px 7px 15px;">+</div>
+			</div>
+			<div class="redbutton" onclick="addOper('-');" title="Минус" style="margin-top:10px;margin-right:5px;">
+				<div id="button_name" style="margin:5px 15px 7px 15px;">-</div>
+			</div>
+			<div class="redbutton" onclick="addOper('*');" title="Умножить" style="margin-top:10px;margin-right:5px;">
+				<div id="button_name" style="margin:5px 15px 7px 15px;">*</div>
+			</div>
+			<div class="redbutton" onclick="addOper('/');" title="Делить" style="margin-top:10px;margin-right:5px;">
+				<div id="button_name" style="margin:5px 15px 7px 15px;">/</div>
+			</div>
+			<div class="redbutton" onclick="addOper('(');" title="Левая скобка" style="margin-top:10px;margin-right:5px;">
+				<div id="button_name" style="margin:5px 15px 7px 15px;">(</div>
+			</div>
+			<div class="redbutton" onclick="addOper(')');" title="Правая скобка" style="margin-top:10px;margin-right:5px;">
+				<div id="button_name" style="margin:5px 15px 7px 15px;">)</div>
+			</div>
+		</div><br>
+		<div style="display:inline-block;border-radius:10px;padding:15px;margin:5px;border:1px dashed #3d7d8d;margin-bottom:30px;" id="oper_fields_formula">
+			<h6 style="margin-bottom:0px;margin-top:0px;color:#3d7d8d;font:normal 11px 'Ubuntu Light';">Операторы и текстовые поля</h6>
+			<div class="redbutton" onclick="addOper('text');" title="Свободное текстовое поле" style="margin-top:10px;margin-right:5px;">
+				<div class="field_type_image" style="background-image:url(/darwinpro/src/vis/svg/freefield.svg);margin:7px 9px 6px 9px;"></div>
+			</div>
+			<div class="redbutton" onclick="addOper('=');" title="Равно" style="margin-top:10px;margin-right:5px;">
+				<div id="button_name" style="margin:5px 15px 7px 15px;">=</div>
+			</div>
+			<div class="redbutton" onclick="addOper('!=');" title="Не равно" style="margin-top:10px;margin-right:5px;">
+				<div id="button_name" style="margin:5px 15px 7px 15px;">!=</div>
+			</div>
+			<div class="redbutton" onclick="addOper('+');" title="Плюс" style="margin-top:10px;margin-right:5px;">
+				<div id="button_name" style="margin:5px 15px 7px 15px;">+</div>
+			</div>
+			<div class="redbutton" onclick="addOper('-');" title="Минус" style="margin-top:10px;margin-right:5px;">
+				<div id="button_name" style="margin:5px 15px 7px 15px;">-</div>
+			</div>
+			<div class="redbutton" onclick="addOper('*');" title="Умножить" style="margin-top:10px;margin-right:5px;">
+				<div id="button_name" style="margin:5px 15px 7px 15px;">*</div>
+			</div>
+			<div class="redbutton" onclick="addOper('/');" title="Делить" style="margin-top:10px;margin-right:5px;">
+				<div id="button_name" style="margin:5px 15px 7px 15px;">/</div>
+			</div>
+			<div class="redbutton" onclick="addOper('(');" title="Левая скобка" style="margin-top:10px;margin-right:5px;">
+				<div id="button_name" style="margin:5px 15px 7px 15px;">(</div>
+			</div>
+			<div class="redbutton" onclick="addOper(')');" title="Правая скобка" style="margin-top:10px;margin-right:5px;">
+				<div id="button_name" style="margin:5px 15px 7px 15px;">)</div>
+			</div>
+			<div class="redbutton" onclick="addOper('AND');" title="Логическое «И»" style="margin-top:10px;margin-right:5px;">
+				<div id="button_name" style="margin:5px 15px 7px 15px;">И</div>
+			</div>
+			<div class="redbutton" onclick="addOper('OR');" title="Логическое «ИЛИ»" style="margin-top:10px;margin-right:5px;">
+				<div id="button_name" style="margin:5px 15px 7px 15px;">ИЛИ</div>
+			</div>
+			<div class="redbutton" onclick="addOper('>');" title="Больше" style="margin-top:10px;margin-right:5px;">
+				<div id="button_name" style="margin:5px 15px 7px 15px;">&gt;</div>
+			</div>
+			<div class="redbutton" onclick="addOper('<');" title="Меньше" style="margin-top:10px;margin-right:5px;">
+				<div id="button_name" style="margin:5px 15px 7px 15px;">&lt;</div>
+			</div>
+			<div class="redbutton" onclick="addOper('like');" title="Содержит значение" style="margin-top:10px;margin-right:5px;">
+				<div id="button_name" style="margin:5px 15px 7px 15px;">СОДЕРЖИТ</div>
+			</div>
+			<div class="redbutton" onclick="addOper('notlike');" title="Не содержит значения" style="margin-top:10px;margin-right:5px;">
+				<div id="button_name" style="margin:5px 15px 7px 15px;">НЕ СОДЕРЖИТ</div>
+			</div>
+			
+		</div><br>
+		<div style="display:inline-block;border-radius:10px;padding:15px;margin:5px;border:1px dashed #3d7d8d;margin-bottom:30px;" id="guide_fields_formula">
+			<h6 style="margin-bottom:0px;margin-top:0px;color:#3d7d8d;font:normal 11px 'Ubuntu Light';">Поля выбранного справочника</h6>	<div class="schemafield" onclick="apnd_to_formula(this);" id="name-_id"><div id="button_name">Идентификатор</div></div>
+			<div class="schemafield" onclick="apnd_to_formula(this);" id="name-_num"><div id="button_name">Позиция в списке</div></div>
+			<div class="schemafield" onclick="apnd_to_formula(this);" id="name-_active"><div id="button_name">Статус</div></div>
+			<div class="schemafield" onclick="apnd_to_formula(this);" id="name-_name"><div id="button_name">Наименование</div></div>
+			<div class="schemafield" onclick="apnd_to_formula(this);" id="name-c_1"><div id="button_name">Конструктор</div></div>
+			<div class="schemafield" onclick="apnd_to_formula(this);" id="name-c_2"><div id="button_name">Самокат</div></div>
+			<div class="schemafield" onclick="apnd_to_formula(this);" id="name-c_3"><div id="button_name">Коляска</div></div>
+				</div><br>	
+		<div style="display:inline-block;border-radius:10px;padding:15px;margin:5px;border:1px dashed #3d7d8d;" id="schema_fields">
+			<h6 style="margin-bottom:0px;margin-top:0px;color:#3d7d8d;font:normal 11px 'Ubuntu Light';">Поля текущей схемы</h6>
+							<div class="basicbutton" onclick="apnd_to_formula_ticket(this);" id="fromtick-_id"><div id="button_name">Идентификатор</div></div>
+							<div class="basicbutton" onclick="apnd_to_formula_ticket(this);" id="fromtick-_fromid"><div id="button_name">Принадлежность к заявке</div></div>
+							<div class="basicbutton" onclick="apnd_to_formula_ticket(this);" id="fromtick-_guide"><div id="button_name">На основе справочника</div></div>
+							<div class="basicbutton" onclick="apnd_to_formula_ticket(this);" id="fromtick-_guide_id"><div id="button_name">ID позиции в справочнике</div></div>
+							<div class="basicbutton" onclick="apnd_to_formula_ticket(this);" id="fromtick-_name"><div id="button_name">Наименование</div></div>
+							<div class="basicbutton" onclick="apnd_to_formula_ticket(this);" id="fromtick-c_1"><div id="button_name">Классификация товара</div></div>
+							<div class="basicbutton" onclick="apnd_to_formula_ticket(this);" id="fromtick-c_2"><div id="button_name">Объединение по примечанию</div></div>
+							<div class="basicbutton" onclick="apnd_to_formula_ticket(this);" id="fromtick-c_3"><div id="button_name">Заказчик</div></div>
+					</div>	
+	</div>
